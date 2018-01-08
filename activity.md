@@ -2,9 +2,9 @@
 
 ## Form teams
 
-Form a of 2 or 3 person team. It's better to work with someone who is using the same operating system as you.
+Find a partner, then pair up with another pair. These 2 pairs will form a team. 
 
-Each team member will sometimes be a maintainer and sometimes a contributor. Rotate roles as necessary to ensure everyone in your team gets a chance to experience each role.
+Each pair will sometimes be a maintainer and sometimes a contributor. Rotate roles as necessary to ensure everyone in your team gets a chance to experience each role.
 
 
 ## Overview
@@ -15,14 +15,24 @@ described in [_Workflow Reference_](reference.md).
 - Complete each part in order.
 - Complete each step in each part in order.
 
+## Part 0: Create an account on GitHub
+
+If you currently have an account on GitHub, use that for this lab.
+
+If you do not currently have an account on GitHub, create one now:
+
+- Go to github.com
+- Follow these [WikiHow instructions](http://www.wikihow.com/Create-an-Account-on-GitHub). Select the free plan (for public and open source repositories).  
+
 ## Part 1: Create an organization on GitHub
 
-- Name it what you like.
-- Set the default permissions so that all organization members can create projects and write to any project in the organization.
-- Add all team members to the organization.
+- Make sure at least 1 member from each team is logged into GitHub.
+- Have one member of one of the teams click on the button with their username/photo at the top left of the page, in the feed. Select "Create organization" from the drop-down menu that appears.
+- Name the organization whatever you like.
+- Set the default permissions so that all organization members can create projects and write to any project in the organization. (This would be all members of your team and all members of the other team.)
+- Add all members of both teams to the organization.
 
-
-## Part 2: Create official upstream repository in organization
+## Part 2: Create an official upstream repository in organization
 
 - Name it `ourfavorites`
 - Give it a default README.md file.
@@ -30,38 +40,35 @@ described in [_Workflow Reference_](reference.md).
 
 ## Part 3: Contributor-1 setup
 
-- Select a team member to be Contributor-1
-- Help Contributor-1 to follow _Setup: (1-4)_ in the _Workflow Reference_ to prepare his/her local and remote repositories.
+- Select a team member from one team to be Contributor-1
+- Select a team member from the other team to be Contributor-2
+- Help Contributor-1 to follow _Setup: (1-3)_ in the _Workflow Reference_ to prepare their local and remote repositories.
 
 
-## Part 4: First contribution
+## Part 4: First contributions
 
-- Help Contributor-1 to follow _Starting your contribution: (5-13)_ to add a
+- Help Contributor-1 to follow _Starting your contribution: (4-8)_ to add a
   new file `favorite-foods.txt` that contains a couple of Contributor-1's
   favorite foods.
-- Select someone to play Maintainer (not Contributor-1).
-- Help the Maintainer to accept Contributor-1's pull-request on GitHub.
-- Help Contributor-1 to follow _Update your master (27-28)_ and
-  _Delete unneeded branches (29-31)_ to clean up.
+- Help Contributor-1 to follow _Update your master (25-26)_ and
+  _Delete unneeded branches (27-29)_ to clean up.
 
 Congratulations, your team has made its first contribution! Celebrate. :clap: :clap:
 
 
 ## Part 5: Contributor-2 setup and second contribution
 
-- Help Contributor-2 to follow _Setup: (1-4)_ to prepare his/her local and remote repositories.
-- Repeat the steps above to have contributor-2 contribute a new file
-  `favorite-movies.txt` with a couple of his/her favorite movies.
-- Make sure that the maintainer has accepted contributor-2's pull-request and contributor-2 has updated their master and cleaned up.
+- Help Contributor-2 to follow _Setup: (1-3)_ to prepare their local and remote repositories.
+- Repeat the steps above to have Contributor-2 contribute a new file
+  `favorite-movies.txt` with a couple of their favorite movies.
+- Repeat the steps above to have Contributor-2 update their master and clean up.
 
 Celebrate again. :clap: :clap:
-
-If you have 3 team members, repeat this scenario adding a file `favorite-animals.txt`.
 
 ## Part 6: First synchronization
 
 - Contributor-1's repositories are out of synch. Help Contributor-1 follow
-  _Keep your repositories up-to-date (18-23)_ to update his/her repositories.
+  _Keep your repositories up-to-date (13-19)_ to update their repositories.
 
 Celebrate. But keep it small. :clap: Don't worry, there will be bigger celebrations later.
 
@@ -70,49 +77,32 @@ Celebrate. But keep it small. :clap: Don't worry, there will be bigger celebrati
 
 - Have Contributor-1 and Contributor-2 independently follow the contribution
   workflow to add another favorite food to the end of `favorite-foods.txt`.
-- Maintainer, accept one of the pull-requests. Try to accept the other. You
-  won't be able to because changes in the pull-request conflict with the other
-  that you already accepted.
-- Help the contributor with the unresolved pull-request to follow
-  _Keep your repositories up-to-date (18-23)_ to synchronize his/her
+- Contributor-1 should commit and push their changes before Contributor-2. This should be successful.
+- Contributor-2 should try to commit and push their changes after Contributor-1 pushes their changes. This should fail.
+- Help Contributor-2 follow _Keep your repositories up-to-date (13-19)_ to synchronize their
   repositories and resolve the conflicts.
-- Maintainer, note that the conflicted pull-request is automatically updated and
-  should be acceptable. Accept the pull-request.
 - Have contributors clean up.
 
 Celebrate enthusiastically. :clap: :clap: :clap: That was challenging.
 
 
-## Part 8: Multi-round contribution
+## Part 8: Squash
 
-- Have contributor-1 add another food, and contributor-2 another movie.
-- Have the maintainer ask for a modification through the pull-request
-  (e.g., "Please pick another flavor. I don't like chocolate.").
-- Have contributors make, commit, and push the new changes.
-- If the maintainer is satisfied, accept the pull-requests.
-- Contributors, don't forget to clean up.
-
-Notice how pull-requests provide a way for a contributor and a maintainer to
-communicate about a proposed change. Also notice how the pull-request updates
-automatically as new changes are pushed to the same branch.
-
-
-## Part 9: Squash
-
-- Repeat the multi-round contribution until both contributors have made multiple
-  commits.
-- Maintainer, through the pull-request, ask contributors to squash their work
-  into a single commit.
-- Help contributors to follow _Squash your commits (24-25)_ to squash their
+- Have each contributor make multiple commits to their local repository. 
+- Help contributors to follow _Squash your commits (20-21)_ to squash their
   commits into a single commit and push it.
-- Maintainer, accept the pull-requests once it contains the same work, but only
-  a single commit.
 - Contributors, don't forget to clean up.
 
 This is another moment for an enthusiastic celebration. :clap: :clap: :clap: :clap: :clap: Well done!  
 
+## Part 9 (advanced): Contributing to a repository that you do not own
+
+Here is where we do the whole fork and pull request thing.
+
 
 ## Copyright and Licensing
+
+This lab was modified by Amy Csizmar Dalal from a lab by Darci Burdge and Stoney Jackson.
 
 Copyright 2016 Darci Burdge and Stoney Jackson SOME RIGHTS RESERVED
 
